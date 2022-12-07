@@ -13,7 +13,7 @@
                 <Font size="32.0" />
             </font>
         </Label>
-        <ListView fx:id="ListView" layoutX="29.0" layoutY="85.0" prefHeight="270.0" prefWidth="352.0" />
+        <ListView fx:id="cartListView" layoutX="29.0" layoutY="85.0" prefHeight="270.0" prefWidth="352.0" />
         <Button layoutX="266.0" layoutY="366.0" mnemonicParsing="false" onAction="#onButtonCancelClick" text="Abbrechen" />
     </children>
 </AnchorPane>

@@ -30,7 +30,7 @@ public class ControllerWarenkorb {
         this.items = items;
 
         for (OrderItem item : this.items) {
-            cartListView.getItems().add(item.getAmount() + " Ex. " + "\t" + item.getProductName());
+            cartListView.getItems().add(item.getAmount() + "\t" + item.getProductName());
         }
     }
 

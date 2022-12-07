@@ -27,7 +27,7 @@ public class HelloController {
     private Label CountLabelamount;
 
     @FXML
-    private Hyperlink HyperlinkWarenkorb;
+    public Hyperlink HyperlinkWarenkorb;
 
 
     @FXML
@@ -56,7 +56,7 @@ public class HelloController {
 
     @FXML
     private void onHyperlinkWarenkorb() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("cartWindow.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Warenkorb.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
         Stage stage = new Stage();
