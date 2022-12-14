@@ -5,12 +5,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import java.util.LinkedList;
 
@@ -29,6 +29,8 @@ public class HelloController {
     @FXML
     public Hyperlink HyperlinkWarenkorb;
 
+    @FXML
+    private Button CancelButton;
 
     @FXML
     private void initialize() {
@@ -68,4 +70,10 @@ public class HelloController {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.show();
     }
+
+   /* @FXML
+    private void onButtonCancelClick() {
+        Stage stage = (Stage) CancelButton.getScene().getWindow();
+        stage.close();
+    }*/
 }
