@@ -52,6 +52,7 @@ public class HelloController {
 
         orderedItems.add(item);
         CountLabelamount.setText(String.valueOf(orderedItems.size()));
+
     }
 
     @FXML
@@ -61,11 +62,9 @@ public class HelloController {
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setScene(scene);
-        //Controller-Instanz holen
         ControllerWarenkorb controller = fxmlLoader.getController();
         controller.setStage(stage);
         controller.setItems(orderedItems);
-        //Modality setzen, um die Stage modal anzuzeigen
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.show();
     }
